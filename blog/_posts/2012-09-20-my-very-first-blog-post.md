@@ -2,7 +2,7 @@
 layout: post
 title: My very first blog post
 tags: [nana, emacs, joy]
-image: /images/my-very-first-blog-post.jpg
+image: /images/blog/my-very-first-blog-post.jpg
 ---
 Every blog has to start somewhere, and I am starting right here.
 I never got around blogging, even though I have been drawn to
