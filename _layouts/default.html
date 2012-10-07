@@ -1,0 +1,41 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<title>{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}</title>
+	{% if page.description %} <meta name="description" content="{{page.description}}" /> {% endif %}
+	{% if page.keywords %} <meta name="keywords" content="{{page.keywords}}" /> {% endif %}
+	<meta name="author" content="Brandur Øssursson" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="robots" content="noindex,nofollow" />
+
+	<link rel="stylesheet" type="text/css" href="/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pygments.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Google analytics -->
+	<script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-31498037-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+
+</head>
+<body class="{{page.site_section}}">
+	<header class="top">
+		<section class="menu">
+		<a href="/" title="home" class="logo"><img src="/img/logo.png" /></a>
+		<nav role="navigation"><ul>
+				<li class="home"><a href="/">Home</a></li>
+				<li class="blog"><a href="/blog/">Blog</a></li>
+				<li class="projects"><a href="/projects/">Projects</a></li>
+				<li class="about"><a href="/about/" rel="author" title="About me">About</a></li>
+			</ul>
+		</nav>
+		</section>
+	</header>
+	<div id="content">
+{{ content }}
+	</div>
+
+<footer class="foot">
+	&copy; Brandur Øssursson 2012
+</footer>
+</body>
+</html>

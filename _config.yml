@@ -1,0 +1,25 @@
+safe:        false
+auto:        true
+server:      true
+server_port: 4000
+
+source:      "."
+destination: "./_site"
+
+future:      true
+lsi:         false
+pygments:    true
+markdown:    maruku
+permalink:   /:categories/:title/
+
+exclude: ['Rakefile', 'README.textile', 'config.rb', 'CNAME']
+
+url: http://localhost:4000/
+title: branduren
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
