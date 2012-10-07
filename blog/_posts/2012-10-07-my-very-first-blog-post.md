@@ -12,7 +12,7 @@ this matter.
 ![My very first blog post](/images/blog/my-very-first-blog-post.jpg)
 
 ## What I hope getting out of it
-I always want to learn stuff, and I am sure I will learn something from the process. I would like to to improve my English and writing skills, and what
+I always want to learn stuff, and I am sure I will learn something from the process. I would like to improve my English and writing skills, and what
 better way than to write about something I really like ?
 
 That being said, I hope to connect with people who share some of my interest. Oh yeah, and I would love getting some feedback on some of the topics.
