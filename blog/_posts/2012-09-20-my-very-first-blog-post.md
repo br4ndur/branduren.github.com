@@ -4,14 +4,13 @@ title: My very first blog post
 description: WhenWithout life
 tags: [nana, emacs, joy]
 image: http://localhost:4000/images/blogging.jpg
-
 ---
 Every blog has to start somewhere, and I am starting right here.
 I never got around blogging, even though I have been drawn to
 computers for as long as I can remember. But I guess I am not alone in
 this matter.
 
-![My very first blog post](http://localhost:4000/images/blogging.jpg)
+![My very first blog post](/images/blogging.jpg)
 
 ## What I hope getting out of it
 I always want to learn stuff, and I am sure I will learn something from the process. I would like to to improve my English and writing skills, and what
