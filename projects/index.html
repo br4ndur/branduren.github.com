@@ -1,0 +1,16 @@
+---
+layout: default
+title: "branduren.github.com"
+site_section: projects
+---
+<h1>Projects</h1>
+
+<ul class="projects">
+{% for post in site.categories.projects %}
+	<li><a href="{{ post.url }}">
+		<img src="{{ BASE_PATH }}{{ post.image }}" alt="{{post.title}}" />
+		<span class="title">{{ post.title }}</span>
+		<span class="tags">html5, javascript, css2</span>
+	</a></li>
+{% endfor %}
+</ul>
