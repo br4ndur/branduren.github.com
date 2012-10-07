@@ -21,7 +21,7 @@ That being said, I hope to connect with people who share some of my interest. Oh
 I am not going to post reguraly, even though many so called blog experts state that I should. I dont have the time, nor do I want to.
 Furtermore I keep hearing things like niche blogging is better than general blogging, so a blogger should try to aim for a unique niche - yeah, I am not going to do that here.
 
-## what topics you should expect from this blog
+## What topics you should expect from this blog
 It could be anything that interst me, so I guess it will be mostly geeky topics like:
 
 * Development (eg. C, sml php Java Javascript html5 css3)
