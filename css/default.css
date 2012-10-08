@@ -9,15 +9,13 @@ html {
 }
 
 body {
-	font-family: sans-serif, Arial, Verdana;
+	font-family: 'Open Sans', sans-serif, Arial, Verdana;
 	font-size: 1em;
 	line-height: 1.6em;
-
-	/* min-width:320px; */
+	min-width:260px;
 }
 
 p, ul, ol a{
-	font-family: 'Open Sans', sans-serif, Arial, Verdana;
 	font-size: 1.1em;
 	margin:1em 0;
 	padding:0;
@@ -30,18 +28,14 @@ ul, ol {
 }
 
 img {
-	text-align:center;
-
-}
-
-img {
+	max-width: 100%;
 	display:block;
 	margin:auto;
 }
 
 
 h1, h2, h3 {
-	font-family: Helvetica,"Trebuchet MS", serif, 'Pompiere';
+	font-family: Helvetica, sans-serif;
 	text-shadow: 2px 2px 2px #ccc;
 	line-height: 1em;
 	color: #222;
@@ -49,28 +43,27 @@ h1, h2, h3 {
 
 	h1 {
 		border-bottom: 1px solid #ccc;
-		margin:0.4em 0;
+		margin: 0 0 0.4em 0;
 		font-size: 2.5em;
-		line-height: 1.5em;
+		line-height: 1.2em;
 		font-style: normal;
 	}
 
 	h2 {
-		margin: 2em 0 0em 0;
-		font-size: 1.3em;
+		margin: 1em 0 0.5em 0;
+		font-size: 1.5em;
 	}
 
 	h3 {
-	    font-size: 1.7em;
+	    font-size: 1.3em;
 	    margin: 1em 0 0.5em 0;
 	}
-
-
 
 header.top {
 	display:block;
 	height:50px;
 	padding:0;
+	margin-bottom:2em;
 	background-color:#333;
 }
 
@@ -79,10 +72,14 @@ header section.menu,#content,footer.foot {
 	margin:0 auto;
 }
 
-a.logo {
+#logo {
 	display:block;
 	float:left;
-	padding:5px;
+	height:40px;
+	width:40px;
+	margin-top:7px;
+	margin-left:5px;
+	background: url(/img/logo.png) no-repeat;
 }
 
 header nav{
@@ -95,9 +92,8 @@ header nav ul, header nav ul li {
 	padding:0;
 }
 
-header nav ul li {
+header nav ul li{
 	display:inline-block;
-	line-height:50px
 }
 
 header nav ul li a{
@@ -107,6 +103,7 @@ header nav ul li a{
 	font-size:1.3em;
 	color:#ccc;
 	text-decoration:none;
+	line-height:50px;
 }
 
 header nav ul li a:hover {
@@ -119,6 +116,13 @@ body.about header nav ul li.about a, body.blog header nav ul li.blog a, body.pro
 	color:#fff;
 	background: url(/img/selected_menu.png) no-repeat center bottom;
 }
+
+
+#about div {
+	display:inline-block;
+	max-width:770px;
+}
+
 
 ul.projects {
 	margin:0 0;
@@ -205,7 +209,6 @@ div {
 	display:inline-block;
 	width:660px;
 	padding: 0;
-	font-family: Helvetica, sans-serif;
 	font-size: 1em;
 	margin:0;
 }
@@ -238,33 +241,6 @@ div {
 	text-decoration: none;
 }
 
-.widget {
-	text-align:right;
-	display:inline-block;
-	vertical-align:top;
-	width:300px;
-}
-
-.widget li {
-	list-style: none;
-}
-
-.widget h2{
-	margin:0px 0px 0px 40px;
-	padding:15px 0;
-	background-color:#ccc;
-	text-align:center;
-	font-size:1em;
-}
-
-#flickr {
-	width:240px;
-}
-#flickr h4{
-	text-align:center;
-	color:red;
-}
-
 #recent-blog-posts {
 	display:inline-block;
 	max-width:700px;
@@ -281,7 +257,7 @@ div {
 
 article.preview{
 	margin:0;
-	padding:5px 0 10px 0;
+	padding:0 0 10px 0;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -308,7 +284,7 @@ article.preview.big img{
 }
 
 article.preview h3{
-	font-size:1.5em;
+
 }
 
 article.preview span.stamp{
@@ -328,36 +304,12 @@ a.blogbtn:hover {
 	background-color:#eee;
 }
 
-
-.archive {
-	margin-left: 0;
-	list-style: none;
-}
-	.archive li {
-		padding: .7em .5em;
-		border-bottom: 1px solid #e8e8e8;
-	}
-		.archive li a {
-			display: block;
-			padding-left: 5em;
-			font-size: 1.2em;
-			text-decoration: none;
-		}
-			.archive li a:hover {
-				text-decoration: underline;
-			}
-
-			.archive li .post-date {
-				float: left;
-				color: #999;
-			}
-
 #elsewhere {
-	width: 200px;
+	width: 180px;
 	text-align:center;
 	verticle-align:top;
 	display:inline-block;
-	float:right;
+	vertical-align:top;
 }
 
 #elsewhere ul {
@@ -375,16 +327,8 @@ a.blogbtn:hover {
 	display:inline-block;
 	width:50px;
 	height:50px;
-	margin:8px;
+	margin:3px;
 }
-#elsewhere ul li a img{
-	width:50px;
-	height:50px;
-}
-
-/* about */
-
-
 
 footer.foot {
 	border-top: 1px solid #ccc;
@@ -394,4 +338,70 @@ footer.foot {
 	color:#999;
 	font-weight:400;
 	font-size:0.9em;
+}
+
+
+@media all and (orientation:portrait) {
+  /* Style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* Style adjustments for landscape mode goes here */
+
+}
+
+
+
+/* Opera Mobile, Mobile Safari, Android Chrome */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+/* max-width: 480
+....................................................................................... */
+
+@media screen and (max-width: 480px) {
+
+	body {
+		font-size: 0.8em;
+	}
+
+	header.top {
+		height: 50px;
+	}
+
+	header.top nav ul li a{
+		margin:0 0px;
+		padding:0px 5px;
+
+	}
+}
+
+
+/* max-width: 320
+....................................................................................... */
+
+@media screen and (max-width: 320px) {
+	body {
+
+	}
+
+	header.top {
+		height: 50px;
+	}
+
+	header.top nav ul li a{
+		margin:0 0px;
+		padding:0px 5px;
+		font-size: 1.1em;
+	}
+
+	h1 {
+		font-size: 2.0em;
+	}
 }
