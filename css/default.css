@@ -138,7 +138,6 @@ ul.projects li a{
 	width:16em;
 	height:16em;
 	margin:1em;
-	padding:0.7em;
 }
 
 ul.projects li a:hover{
@@ -161,14 +160,15 @@ ul.projects span.title {
 }
 
 ul.projects span.tags{
+	font-size:1.0em;
 	color:#999;
 }
 
 ul.projects img{
 	display:inline;
-	max-width:240px;
+	width:100%;
+	max-width:300px;
 }
-
 
 #container {
 	width: 95%;
