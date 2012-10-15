@@ -1,11 +1,11 @@
 ---
 layout: project
 title: This website
-image: /images/this-website.jpg
+image: http://images.branduren.com/projects/this-website.jpg
 tags: [jekyll, html5, javascript, css]
 ---
 
-![branduren.com](/images/this-website.jpg)
+![branduren.com](http://images.branduren.com/projects/this-website.jpg)
 
 This site started out as a small weekend project and wasn't intended for anything, but since I needed a place on da interweb to call my own, I decided to keep it.
 
