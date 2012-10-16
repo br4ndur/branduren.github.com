@@ -1,4 +1,4 @@
-var canvas, ctx, destinY, score, freeze, mdown;
+var game, canvas, ctx, destinY, score, freeze, mdown;
 var object = null;
 var objects =  [        "048CF90", //I orange
                         "01480E0", //J green
@@ -22,20 +22,20 @@ var rules = {
 
 //initialize
 function init() {
-        //Standardize devices
-        document.addEventListener("touchstart", touchHandler, true);
-        document.addEventListener("touchmove", touchHandler, true);
-        document.addEventListener("touchend", touchHandler, true);
-        document.addEventListener("touchcancel", touchHandler, true);
-
+        game = document.getElementById('game');
         canvas = document.getElementById('bricks');
 	canvas.onselectstart = function () { return false; } //avoid selecting text when dclicking
         ctx = canvas.getContext('2d');
-
         setSize();
 
-        document.addEventListener("mousedown", mouseDown, true);
-        document.addEventListener("mousemove", mouseMove, true);
+        //Standardize devices
+        game.addEventListener("touchstart", touchHandler, true);
+        game.addEventListener("touchmove", touchHandler, true);
+        game.addEventListener("touchend", touchHandler, true);
+        game.addEventListener("touchcancel", touchHandler, true);
+
+        game.addEventListener("mousedown", mouseDown, true);
+        game.addEventListener("mousemove", mouseMove, true);
         document.addEventListener("mouseup", mouseUp, true);
 
         newGame();
@@ -322,12 +322,10 @@ function mouseMove(event){
 }
 //Mouse up
 function mouseUp(event) {
-
         if(!moved.side&&!moved.down) tryRotate();
 
         mdown=false;
         moved={x:0,side:false,down:false};
-
 }
 
 //go fullscreen
