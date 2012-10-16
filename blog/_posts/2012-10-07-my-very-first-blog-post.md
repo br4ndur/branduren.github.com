@@ -1,6 +1,8 @@
 ---
 layout: post
 title: My very first blog post
+description: "My first small blog post. Every blog has to start somewhere, and I am starting right here."
+keywords: "blog, post"
 tags: [blogging]
 image: http://images.branduren.com/blog/my-very-first-blog-post.jpg
 ---

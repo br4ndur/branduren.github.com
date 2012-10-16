@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Blog
+description: "You found it - my blog. Here is a list of my previous posts, I'll add some more as time goes by, so stay tuned."
+keywords: "blog, posts, index"
 site_section: blog
 ---
 <h1>Blog</h1>
-
 <ul class="posts">
 {% for post in site.categories.blog limit %}
 	<li><a href="{{ post.url }}"><span class="post_name">{{ post.title }}</span><span class="post_date">{{ post.date | date:"%B %e, %Y" }}</span></a></li>

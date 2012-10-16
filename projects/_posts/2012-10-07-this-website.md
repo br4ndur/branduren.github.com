@@ -1,6 +1,8 @@
 ---
 layout: project
 title: This website
+description: "This Jekyll-powered site is hosted on github, feel free to browse, study and use the source code."
+keywords: "jekyll, github, blog, markdown"
 image: http://images.branduren.com/projects/this-website.jpg
 tags: [jekyll, html5, javascript, css]
 ---
